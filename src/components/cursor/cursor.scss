@@ -1,0 +1,38 @@
+#cursor {
+  position: fixed;
+  width: 8px;
+  height: 8px;
+  background: var(--text);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  transition:
+    width 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    height 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    background 0.25s;
+}
+#cursor-ring {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  border: 1.5px solid rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9998;
+  transform: translate(-50%, -50%);
+  transition:
+    width 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    height 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    border-color 0.25s;
+}
+.hovering #cursor {
+  width: 0px;
+  height: 0px;
+}
+.hovering #cursor-ring {
+  width: 64px;
+  height: 64px;
+  border-color: rgba(0, 113, 227, 0.4);
+  background: rgba(0, 113, 227, 0.06);
+}
