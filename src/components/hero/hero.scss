@@ -60,7 +60,6 @@
 }
 
 .hero-title {
-  font-family: "Playfair Display", serif;
   font-weight: 700;
   font-size: clamp(48px, 7.5vw, 112px);
   letter-spacing: -0.04em;
@@ -74,7 +73,6 @@
   transform: translateY(110%);
 }
 .hero-subtitle-text {
-  font-family: "Playfair Display", serif;
   font-size: clamp(28px, 3.5vw, 52px);
   font-weight: 400;
   font-style: italic;

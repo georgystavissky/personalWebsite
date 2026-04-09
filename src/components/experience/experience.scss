@@ -1,0 +1,105 @@
+#experience {
+  background: var(--white);
+}
+.exp-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.exp-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.exp-item {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 60px;
+  padding: 60px 0;
+  border-bottom: 1px solid var(--light);
+  position: relative;
+}
+.exp-item:first-child {
+  border-top: 1px solid var(--light);
+}
+
+.exp-left {
+  padding-top: 4px;
+}
+.exp-period {
+  font-size: 13px;
+  color: var(--text-muted);
+  letter-spacing: -0.01em;
+  margin-bottom: 8px;
+  font-weight: 400;
+}
+.exp-co {
+  font-family: "Playfair Display", serif;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 4px;
+  color: var(--text);
+}
+.exp-loc {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.exp-right {
+}
+.exp-title {
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--blue);
+  letter-spacing: -0.01em;
+  margin-bottom: 14px;
+}
+.exp-desc {
+  font-size: 16px;
+  color: var(--text-secondary);
+  font-weight: 300;
+  line-height: 1.75;
+  margin-bottom: 24px;
+  letter-spacing: -0.01em;
+}
+.exp-list-items {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+.exp-point {
+  display: flex;
+  gap: 14px;
+  font-size: 15px;
+  color: var(--text-secondary);
+  font-weight: 300;
+  line-height: 1.65;
+  letter-spacing: -0.01em;
+  opacity: 0;
+  transform: translateY(8px);
+}
+.exp-point-dot {
+  width: 5px;
+  height: 5px;
+  background: var(--blue);
+  border-radius: 50%;
+  margin-top: 9px;
+  flex-shrink: 0;
+}
+.exp-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+.chip {
+  font-size: 12px;
+  color: var(--text-secondary);
+  background: var(--off-white);
+  padding: 4px 12px;
+  border-radius: 980px;
+  border: 1px solid var(--light);
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}

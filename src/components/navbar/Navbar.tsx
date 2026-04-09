@@ -1,4 +1,10 @@
 import "./navbar.scss";
+// import { Playfair_Display } from "next/font/google";
+
+// const playfair = Playfair_Display({
+//   variable: '--playfair-font',
+//   subsets: ["latin"]
+// })
 
 interface INavLink {
   content: string;
@@ -32,7 +38,7 @@ const Navbar = () => {
 
   return (
     <nav>
-      <a href="#" className="nav-logo">
+      <a href="#" className={`nav-logo`}>
         Georgii Stavisskii
       </a>
       <ul className="nav-links">{listEls}</ul>

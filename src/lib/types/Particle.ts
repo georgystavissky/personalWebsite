@@ -7,7 +7,10 @@ export class Particle {
   maxLife: number = 0;
   size: number = 0;
 
-  constructor(private W: number, private H: number) {
+  constructor(
+    private W: number,
+    private H: number,
+  ) {
     this.reset(W, H);
   }
 
@@ -18,7 +21,7 @@ export class Particle {
     this.vy = (Math.random() - 0.5) * 0.3;
     this.life = 0;
     this.maxLife = Math.random() * 200 + 100;
-    this.size = Math.random() * 1.5 + 0.3;
+    this.size = Math.random() * 3 + 1;
   }
 
   update(W: number = this.W, H: number = this.H) {

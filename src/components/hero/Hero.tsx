@@ -4,6 +4,17 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { Particle } from "../../lib/types/Particle";
 import "./hero.scss";
+import { Playfair_Display } from "next/font/google";
+
+const playfair = Playfair_Display({
+  variable: "--playfair-font",
+  subsets: ["latin"],
+});
+const playfair_Italic = Playfair_Display({
+  variable: "--playfair-font-italic",
+  subsets: ["latin"],
+  style: "italic",
+});
 
 const Hero = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -27,7 +38,7 @@ const Hero = () => {
 
     for (let i = 0; i < 50; i++) {
       const p = new Particle(W.current, H.current);
-      p.life = Math.random() * p.maxLife; 
+      p.life = Math.random() * p.maxLife;
       p.y = Math.random() * H.current;
       particles.current.push(p);
     }
@@ -36,7 +47,7 @@ const Hero = () => {
     function animP() {
       if (!ctx) return;
       ctx.clearRect(0, 0, W.current, H.current);
-      particles.current.forEach(p => {
+      particles.current.forEach((p) => {
         p.update();
         p.draw(ctx);
       });
@@ -60,10 +71,26 @@ const Hero = () => {
       stagger: 0.1,
       ease: "expo.out",
     })
-      .to(".hero-subtitle-text", { y: "0%", duration: 0.9, ease: "expo.out" }, "-=.7")
-      .to(".hero-eyebrow", { opacity: 1, y: 0, duration: 0.6, ease: "power2.out" }, "-=.5")
-      .to(".hero-desc", { opacity: 1, y: 0, duration: 0.6, ease: "power2.out" }, "-=.3")
-      .to(".hero-actions", { opacity: 1, y: 0, duration: 0.6, ease: "power2.out" }, "-=.2")
+      .to(
+        ".hero-subtitle-text",
+        { y: "0%", duration: 0.9, ease: "expo.out" },
+        "-=.7",
+      )
+      .to(
+        ".hero-eyebrow",
+        { opacity: 1, y: 0, duration: 0.6, ease: "power2.out" },
+        "-=.5",
+      )
+      .to(
+        ".hero-desc",
+        { opacity: 1, y: 0, duration: 0.6, ease: "power2.out" },
+        "-=.3",
+      )
+      .to(
+        ".hero-actions",
+        { opacity: 1, y: 0, duration: 0.6, ease: "power2.out" },
+        "-=.2",
+      )
       .to(".hero-status", { opacity: 1, duration: 0.5 }, "-=.1");
   }, []);
 
@@ -77,12 +104,14 @@ const Hero = () => {
         Frontend Developer · with a full-stack mindset
       </p>
 
-      <h1 className="hero-title">
+      <h1 className={`${playfair.className} hero-title`}>
         <span className="hero-title-line">Georgii</span>
         <span className="hero-title-line">Stavisskii</span>
       </h1>
       <div className="hero-subtitle-wrap">
-        <span className="hero-subtitle-text">builds things that matter.</span>
+        <span className={`${playfair_Italic.className} hero-subtitle-text`}>
+          builds things that matter.
+        </span>
       </div>
 
       <p className="hero-desc">
@@ -91,8 +120,12 @@ const Hero = () => {
       </p>
 
       <div className="hero-actions">
-        <a href="#experience" className="btn-blue">View Experience →</a>
-        <a href="#contact" className="btn-outline">Get in touch</a>
+        <a href="#experience" className="btn-blue">
+          View Experience →
+        </a>
+        <a href="#contact" className="btn-outline">
+          Get in touch
+        </a>
       </div>
 
       <div className="hero-status">
