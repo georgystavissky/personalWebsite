@@ -4,7 +4,8 @@ const nextConfig: NextConfig = {
   output: "export",
   images: {
     unoptimized: true
-  }
+  },
+  basePath: "/personalWebsite",
 };
 
 export default nextConfig;
