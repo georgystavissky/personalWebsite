@@ -23,6 +23,7 @@ const Cursor = () => {
         y: my.current,
         duration: 0.06,
         ease: "none",
+        overwrite: true,
       });
 
       if (!isHovering.current) {
@@ -32,10 +33,12 @@ const Cursor = () => {
         gsap.to(cursorRef.current, {
           backgroundColor: isDark ? "#ffffff" : "var(--text)",
           duration: 0.2,
+          overwrite: "auto",
         });
         gsap.to(cursorRingRef.current, {
           borderColor: isDark ? "rgba(255,255,255,0.4)" : "rgba(0,0,0,0.25)",
           duration: 0.2,
+          overwrite: "auto",
         });
       }
     };
@@ -64,12 +67,14 @@ const Cursor = () => {
           borderColor: "rgba(0, 113, 227, 0.4)",
           duration: 0.3,
           ease: "power2.out",
+          overwrite: true,
         });
         gsap.to(cursorRef.current, {
           width: 0,
           height: 0,
           duration: 0.25,
           ease: "power2.out",
+          overwrite: true,
         });
       });
 
@@ -85,6 +90,7 @@ const Cursor = () => {
           borderColor: isDark ? "rgba(255,255,255,0.4)" : "rgba(0,0,0,0.25)",
           duration: 0.35,
           ease: "power2.out",
+          overwrite: true,
         });
         gsap.to(cursorRef.current, {
           width: 8,
@@ -92,6 +98,7 @@ const Cursor = () => {
           backgroundColor: isDark ? "#ffffff" : "var(--text)",
           duration: 0.25,
           ease: "power2.out",
+          overwrite: true,
         });
       });
     });
