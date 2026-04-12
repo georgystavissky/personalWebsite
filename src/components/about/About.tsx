@@ -62,10 +62,10 @@ const About = () => {
               Russian (native) · English B2 · Korean (beginner)
             </div>
           </div>
-          <div className="about-card">
+          {/* <div className="about-card">
             <div className="card-label">Status</div>
             <div className="card-value green">✦ Open to new opportunities</div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

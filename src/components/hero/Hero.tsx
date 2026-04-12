@@ -128,10 +128,10 @@ const Hero = () => {
         </a>
       </div>
 
-      <div className="hero-status">
+      {/* <div className="hero-status">
         <div className="status-dot"></div>
         <span>Available for new opportunities</span>
-      </div>
+      </div> */}
     </section>
   );
 };
