@@ -1,6 +1,7 @@
 #stack {
   background: var(--off-white);
 }
+
 .stack-inner {
   max-width: 1200px;
   margin: 0 auto;
@@ -11,6 +12,7 @@
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 16px;
 }
+
 .stack-card {
   background: var(--white);
   border-radius: 20px;
@@ -19,15 +21,18 @@
     transform 0.3s ease,
     box-shadow 0.3s ease;
 }
+
 .stack-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
 }
+
 .stack-card-icon {
   font-size: 28px;
   margin-bottom: 16px;
   display: block;
 }
+
 .stack-card-name {
   font-size: 20px;
   font-weight: 600;
@@ -35,11 +40,13 @@
   margin-bottom: 16px;
   color: var(--text);
 }
+
 .tag-list {
   display: flex;
   flex-wrap: wrap;
   gap: 7px;
 }
+
 .tag {
   font-size: 13px;
   font-weight: 400;
@@ -54,15 +61,28 @@
     color 0.2s,
     border-color 0.2s;
 }
+
 .stack-card:hover .tag {
   background: rgba(0, 113, 227, 0.06);
 }
+
 .tag.learning {
   color: var(--blue);
   background: rgba(0, 113, 227, 0.07);
   border-color: rgba(0, 113, 227, 0.2);
 }
+
 .tag.learning::after {
   content: " ↗";
   font-size: 11px;
+}
+
+@media (max-width: 768px) {
+  .stack-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stack-card {
+    padding: 24px;
+  }
 }

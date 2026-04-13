@@ -73,7 +73,7 @@ const Hero = () => {
     })
       .to(
         ".hero-subtitle-text",
-        { y: "0%", duration: 0.9, ease: "expo.out" },
+        { y: "0%", duration: 0.9, ease: "expo.out", opacity: 1 },
         "-=.7",
       )
       .to(
