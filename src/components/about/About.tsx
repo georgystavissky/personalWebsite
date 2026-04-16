@@ -20,7 +20,7 @@ const About = () => {
         <div className="about-body reveal">
           <p>
             Frontend developer with
-            <strong> 2 years of commercial experience</strong>, focused on
+            <strong> 2+ years of commercial experience</strong>, focused on
             building interfaces that are fast, scalable, and genuinely pleasant
             to use.
           </p>
@@ -33,9 +33,9 @@ const About = () => {
           <p>
             I&apos;ve owned entire features from requirements to production:
             designed the architecture, built the UI, wrote the Dockerfile, and
-            shipped it. Currently leading frontend on a new product at SAVRUS —
-            and learning <strong>Go</strong> on the side because good engineers
-            don&apos;t stop.
+            shipped it. Currently developing backend for a new product at
+            UMBRELLA — and learning <strong>Go</strong> on the side because good
+            engineers don&apos;t stop.
           </p>
         </div>
 
@@ -43,9 +43,9 @@ const About = () => {
           <div className="about-card">
             <div className="card-label">Current Position</div>
             <div className="card-value">
-              Frontend Developer · Team Lead
+              Fullstack Developer
               <br />
-              SAVRUS, Moscow
+              UMBRELLA, Moscow
             </div>
           </div>
           <div className="about-card">

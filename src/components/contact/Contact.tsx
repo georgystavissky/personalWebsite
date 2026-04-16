@@ -1,6 +1,8 @@
 "use client";
+import { BsTelegram } from "react-icons/bs";
 import "./contact.scss";
 import { Playfair_Display } from "next/font/google";
+import { IoMdMail } from "react-icons/io";
 
 const playfair = Playfair_Display({
   variable: "--playfair-font",
@@ -31,10 +33,10 @@ const Contact = () => {
       </p>
       <div className="contact-actions reveal">
         <a href="https://t.me/gestoff" className="btn-white" target="_blank">
-          ↗ Telegram
+          <BsTelegram /> Telegram
         </a>
         <a onClick={handleEmail} className="btn-ghost-white">
-          ✉ Send an email
+          <IoMdMail /> Send an email
         </a>
       </div>
     </section>

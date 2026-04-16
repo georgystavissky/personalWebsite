@@ -1,9 +1,11 @@
-"use client";
 import { useRef } from "react";
-// import { useGSAP } from '@gsap/react';
-// import gsap from 'gsap';
 import "./stack.scss";
 import { Playfair_Display } from "next/font/google";
+import { IoCodeSlash, IoServer } from "react-icons/io5";
+import { FaReact } from "react-icons/fa";
+import { GiPaintBrush } from "react-icons/gi";
+import { BiNetworkChart } from "react-icons/bi";
+import { SiDocker } from "react-icons/si";
 
 const playfair = Playfair_Display({
   variable: "--playfair-font",
@@ -12,29 +14,6 @@ const playfair = Playfair_Display({
 
 const Stack = () => {
   const containerRef = useRef<HTMLElement>(null);
-
-  // useGSAP(() => {
-  //   const cards = containerRef.current?.querySelectorAll('.stack-card');
-
-  //   if (!cards) return;
-
-  //   cards.forEach((card) => {
-  //     const tags = card.querySelectorAll('.tag');
-
-  //     const handleMouseEnter = () => {
-  //       gsap.fromTo(tags,
-  //         { y: 6, opacity: 0.5 },
-  //         { y: 0, opacity: 1, stagger: 0.04, duration: 0.3, ease: 'power2.out' }
-  //       );
-  //     };
-
-  //     card.addEventListener('mouseenter', handleMouseEnter);
-
-  //     return () => {
-  //       card.removeEventListener('mouseenter', handleMouseEnter);
-  //     };
-  //   });
-  // }, { scope: containerRef });
 
   return (
     <section id="stack" ref={containerRef}>
@@ -52,27 +31,55 @@ const Stack = () => {
 
         <div className="stack-grid">
           <div className="stack-card reveal">
-            <span className="stack-card-icon">⚡</span>
-            <div className="stack-card-name">Core</div>
+            <span className="stack-card-icon">
+              <IoCodeSlash />
+            </span>
+            <div className="stack-card-name">Languages</div>
             <div className="tag-list">
               <span className="tag">TypeScript</span>
               <span className="tag">JavaScript ES6+</span>
+              <span className="tag">C#</span>
+              <span className="tag">Go</span>
+              <span className="tag">SQL</span>
               <span className="tag">HTML5</span>
               <span className="tag">CSS3</span>
             </div>
           </div>
+
           <div className="stack-card reveal">
-            <span className="stack-card-icon">🧩</span>
-            <div className="stack-card-name">Frameworks</div>
+            <span className="stack-card-icon">
+              <FaReact />
+            </span>
+            <div className="stack-card-name">Frontend Frameworks</div>
             <div className="tag-list">
-              <span className="tag">Next.js</span>
               <span className="tag">Svelte</span>
+              <span className="tag">Next.js</span>
               <span className="tag">React</span>
             </div>
           </div>
+
           <div className="stack-card reveal">
-            <span className="stack-card-icon">🎨</span>
-            <div className="stack-card-name">Styling & Motion</div>
+            <span className="stack-card-icon">
+              <IoServer />
+            </span>
+            <div className="stack-card-name">Backend & Databases</div>
+            <div className="tag-list">
+              <span className="tag">.NET</span>
+              <span className="tag">Node.js</span>
+              <span className="tag">Bun</span>
+              <span className="tag">PostgreSQL</span>
+              <span className="tag">MongoDB</span>
+              <span className="tag">Gorm</span>
+              <span className="tag">gRPC</span>
+              <span className="tag">REST API</span>
+            </div>
+          </div>
+
+          <div className="stack-card reveal">
+            <span className="stack-card-icon">
+              <GiPaintBrush />
+            </span>
+            <div className="stack-card-name">Styling & Animation</div>
             <div className="tag-list">
               <span className="tag">SCSS/SASS</span>
               <span className="tag">Tailwind CSS</span>
@@ -80,30 +87,25 @@ const Stack = () => {
               <span className="tag">GSAP</span>
             </div>
           </div>
+
           <div className="stack-card reveal">
-            <span className="stack-card-icon">🏗</span>
-            <div className="stack-card-name">Architecture</div>
+            <span className="stack-card-icon">
+              <BiNetworkChart />
+            </span>
+            <div className="stack-card-name">Architecture & Design</div>
             <div className="tag-list">
               <span className="tag">Feature-Sliced Design</span>
-              <span className="tag">REST</span>
+              <span className="tag">Vertical-Slice Design</span>
               <span className="tag">WebSockets</span>
-              <span className="tag">gRPC</span>
+              <span className="tag">System Design</span>
             </div>
           </div>
+
           <div className="stack-card reveal">
-            <span className="stack-card-icon">🗄</span>
-            <div className="stack-card-name">Backend & DB</div>
-            <div className="tag-list">
-              <span className="tag">Node.js</span>
-              <span className="tag">Bun</span>
-              <span className="tag">MongoDB</span>
-              <span className="tag">SQL</span>
-              <span className="tag">Go</span>
-            </div>
-          </div>
-          <div className="stack-card reveal">
-            <span className="stack-card-icon">🐳</span>
-            <div className="stack-card-name">DevOps</div>
+            <span className="stack-card-icon">
+              <SiDocker />
+            </span>
+            <div className="stack-card-name">DevOps & Tools</div>
             <div className="tag-list">
               <span className="tag">Docker</span>
               <span className="tag">docker-compose</span>

@@ -47,14 +47,43 @@ const Experience = () => {
           made an impact.
         </h2>
         <p className="section-sub reveal">
-          Two years, one company, two very different roles — and a lot of
-          ownership.
+          Every role, a different challenge. Every challenge, shipped.
+          {/* Started with desktop. Then frontend lead. Now building platforms from zero. */}
         </p>
 
         <div className="exp-timeline">
           <div className="exp-item">
             <div className="exp-left reveal">
-              <div className="exp-period">Jun 2024 — Present</div>
+              <div className="exp-period">Feb 2026 — Present</div>
+              <div className={`${playfair.className} exp-co`}>UMBRELLA</div>
+              <div className="exp-loc">Moscow, Russia</div>
+            </div>
+            <div className="exp-right">
+              <div className="exp-title reveal">
+                Fullstack Developer · Greenfield Project
+              </div>
+              <p className="exp-desc reveal">
+                Solo developer of a new SIEM testing platform - built from
+                scratch.
+                <br />
+                Currently in active development.
+              </p>
+              <div className="exp-chips">
+                <span className="chip">ASP .NET</span>
+                <span className="chip">C#</span>
+                <span className="chip">OpenSearch</span>
+                <span className="chip">Keycloak</span>
+                <span className="chip">REST API</span>
+                <span className="chip">Docker</span>
+                <span className="chip">System Design</span>
+                <span className="chip">Greenfield</span>
+              </div>
+            </div>
+          </div>
+
+          <div className="exp-item">
+            <div className="exp-left reveal">
+              <div className="exp-period">Jun 2024 - Feb 2026</div>
               <div className={`${playfair.className} exp-co`}>SAVRUS</div>
               <div className="exp-loc">Moscow, Russia</div>
             </div>
@@ -64,7 +93,7 @@ const Experience = () => {
               </div>
               <p className="exp-desc reveal">
                 Led core frontend development after a full team transition.
-                Complete ownership — UI/UX, architecture, deployment, mentoring,
+                Complete ownership - UI/UX, architecture, deployment, mentoring,
                 and building a new product from scratch.
               </p>
               <div className="exp-list-items">
@@ -79,7 +108,7 @@ const Experience = () => {
                 <div className="exp-point">
                   <div className="exp-point-dot"></div>
                   <span>
-                    Implemented 6 major resources end-to-end — from requirements
+                    Implemented 6 major resources end-to-end - from requirements
                     to production.
                   </span>
                 </div>
