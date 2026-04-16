@@ -63,48 +63,6 @@ nav {
 
 @media (max-width: 768px) {
   nav {
-    padding: 0 20px;
-  }
-
-  .nav-links {
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    top: 52px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(255, 255, 255, 100);
-    backdrop-filter: blur(20px);
-    align-items: center;
-    justify-content: center;
-    gap: 40px;
-
-    visibility: hidden;
-    transform: scaleY(0);
-    transform-origin: top center;
-
-    li:last-child {
-      margin-top: 0.5rem;
-    }
-  }
-
-  .nav-links.open {
-    visibility: visible;
-  }
-
-  .nav-links a {
-    font-size: 24px;
-    font-weight: 500;
-    color: var(--text);
-  }
-
-  .nav-links .nav-cta {
-    font-size: 17px !important;
-    padding: 12px 28px;
-  }
-
-  .burger-btn {
-    display: block !important;
+    display: none;
   }
 }
