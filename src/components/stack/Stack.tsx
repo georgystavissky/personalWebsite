@@ -24,10 +24,7 @@ const Stack = () => {
           <br />
           right tools.
         </h2>
-        <p className="section-sub reveal">
-          Technologies I reach for — chosen for a reason, not just resume
-          padding.
-        </p>
+        <p className="section-sub reveal">Technologies I use in production.</p>
 
         <div className="stack-grid">
           <div className="stack-card reveal">

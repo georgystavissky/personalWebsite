@@ -12,30 +12,27 @@ const About = () => {
     <section id="about">
       <div className="section-eyebrow reveal">About</div>
       <h2 className={`${playfair.className} section-heading reveal`}>
-        Code with
-        <br />a purpose.
+        Practical engineering
+        <br />
+        over buzzwords.
       </h2>
 
       <div className="about-layout">
         <div className="about-body reveal">
           <p>
             Frontend developer with
-            <strong> 2+ years of commercial experience</strong>, focused on
-            building interfaces that are fast, scalable, and genuinely pleasant
-            to use.
+            <strong> 2+ years of commercial experience</strong>. <br />I build
+            fast interfaces with predictable behavior and clean structure.
           </p>
           <p>
-            My path started in <strong>.NET/WPF desktop development</strong>,
-            which gave me a deep appreciation for application architecture
-            before I moved into the web. I don&apos;t just wire up components —
-            I think in systems.
+            I started with <strong>.NET/WPF</strong> desktop apps — that&apos;s
+            where I learned to think in terms of architecture, not just UI.
+            <br /> I don&apos;t just assemble components — I design systems.
           </p>
           <p>
-            I&apos;ve owned entire features from requirements to production:
-            designed the architecture, built the UI, wrote the Dockerfile, and
-            shipped it. Currently developing backend for a new product at
-            UMBRELLA — and learning <strong>Go</strong> on the side because good
-            engineers don&apos;t stop.
+            I handle features end-to-end — from requirements and architecture to
+            production. Currently building backend for a new product at UMBRELLA
+            and picking up <strong>Go</strong> along the way.
           </p>
         </div>
 

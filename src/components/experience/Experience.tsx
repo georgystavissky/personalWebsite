@@ -47,8 +47,7 @@ const Experience = () => {
           made an impact.
         </h2>
         <p className="section-sub reveal">
-          Every role, a different challenge. Every challenge, shipped.
-          {/* Started with desktop. Then frontend lead. Now building platforms from zero. */}
+          What I&apos;ve worked on and shipped.
         </p>
 
         <div className="exp-timeline">

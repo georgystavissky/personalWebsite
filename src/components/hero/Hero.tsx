@@ -115,13 +115,13 @@ const Hero = () => {
       </div>
 
       <p className="hero-desc">
-        I craft <strong>fast, scalable interfaces</strong> — from architecture
-        decisions to production deployments. Based in Moscow, open to the world.
+        I build <strong>fast, reliable interfaces</strong> — from architecture
+        to production. Based in Moscow.
       </p>
 
       <div className="hero-actions">
         <a href="#experience" className="btn-blue">
-          View Experience →
+          View Experience
         </a>
         <a href="#contact" className="btn-outline">
           Get in touch
