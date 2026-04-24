@@ -20,7 +20,7 @@ const About = () => {
       <div className="about-layout">
         <div className="about-body reveal">
           <p>
-            Frontend developer with
+            Software developer with
             <strong> 2+ years of commercial experience</strong>. <br />I build
             fast interfaces with predictable behavior and clean structure.
           </p>

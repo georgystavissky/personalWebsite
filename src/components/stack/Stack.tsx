@@ -6,6 +6,7 @@ import { FaReact } from "react-icons/fa";
 import { GiPaintBrush } from "react-icons/gi";
 import { BiNetworkChart } from "react-icons/bi";
 import { SiDocker } from "react-icons/si";
+import StackCard from "./Stackcard";
 
 const playfair = Playfair_Display({
   variable: "--playfair-font",
@@ -27,90 +28,67 @@ const Stack = () => {
         <p className="section-sub reveal">Technologies I use in production.</p>
 
         <div className="stack-grid">
-          <div className="stack-card reveal">
-            <span className="stack-card-icon">
-              <IoCodeSlash />
-            </span>
-            <div className="stack-card-name">Languages</div>
-            <div className="tag-list">
-              <span className="tag">TypeScript</span>
-              <span className="tag">JavaScript ES6+</span>
-              <span className="tag">C#</span>
-              <span className="tag">Go</span>
-              <span className="tag">SQL</span>
-              <span className="tag">HTML5</span>
-              <span className="tag">CSS3</span>
-            </div>
-          </div>
+          <StackCard
+            icon={<IoCodeSlash />}
+            title="Languages"
+            tags={[
+              "TypeScript",
+              "JavaScript ES6+",
+              "C#",
+              "Go",
+              "SQL",
+              "HTML5",
+              "CSS3",
+            ]}
+          />
+          <StackCard
+            icon={<FaReact />}
+            title="Frontend Frameworks"
+            tags={["Svelte", "Next.js", "React", "Vue.js"]}
+          />
+          <StackCard
+            icon={<IoServer />}
+            title="Backend & Databases"
+            tags={[
+              ".NET",
+              "Node.js",
+              "Bun",
+              "Gorm",
+              "PostgreSQL",
+              "MongoDB",
+              "OpenSearch",
+            ]}
+          />
+          <StackCard
+            icon={<GiPaintBrush />}
+            title="Styling & Animation"
+            tags={["SCSS/SASS", "Tailwind CSS", "PostCSS", "GSAP"]}
+          />
 
-          <div className="stack-card reveal">
-            <span className="stack-card-icon">
-              <FaReact />
-            </span>
-            <div className="stack-card-name">Frontend Frameworks</div>
-            <div className="tag-list">
-              <span className="tag">Svelte</span>
-              <span className="tag">Next.js</span>
-              <span className="tag">React</span>
-            </div>
-          </div>
-
-          <div className="stack-card reveal">
-            <span className="stack-card-icon">
-              <IoServer />
-            </span>
-            <div className="stack-card-name">Backend & Databases</div>
-            <div className="tag-list">
-              <span className="tag">.NET</span>
-              <span className="tag">Node.js</span>
-              <span className="tag">Bun</span>
-              <span className="tag">PostgreSQL</span>
-              <span className="tag">MongoDB</span>
-              <span className="tag">Gorm</span>
-              <span className="tag">gRPC</span>
-              <span className="tag">REST API</span>
-            </div>
-          </div>
-
-          <div className="stack-card reveal">
-            <span className="stack-card-icon">
-              <GiPaintBrush />
-            </span>
-            <div className="stack-card-name">Styling & Animation</div>
-            <div className="tag-list">
-              <span className="tag">SCSS/SASS</span>
-              <span className="tag">Tailwind CSS</span>
-              <span className="tag">PostCSS</span>
-              <span className="tag">GSAP</span>
-            </div>
-          </div>
-
-          <div className="stack-card reveal">
-            <span className="stack-card-icon">
-              <BiNetworkChart />
-            </span>
-            <div className="stack-card-name">Architecture & Design</div>
-            <div className="tag-list">
-              <span className="tag">Feature-Sliced Design</span>
-              <span className="tag">Vertical-Slice Design</span>
-              <span className="tag">WebSockets</span>
-              <span className="tag">System Design</span>
-            </div>
-          </div>
-
-          <div className="stack-card reveal">
-            <span className="stack-card-icon">
-              <SiDocker />
-            </span>
-            <div className="stack-card-name">DevOps & Tools</div>
-            <div className="tag-list">
-              <span className="tag">Docker</span>
-              <span className="tag">docker-compose</span>
-              <span className="tag">Linux</span>
-              <span className="tag">systemd</span>
-              <span className="tag">Bash</span>
-            </div>
-          </div>
+          <StackCard
+            icon={<BiNetworkChart />}
+            title="Architecture & Design"
+            tags={[
+              "Feature-Sliced Design",
+              "Vertical-Slice Design",
+              "REST API",
+              "WebSockets",
+              "System Design",
+            ]}
+          />
+          <StackCard
+            icon={<SiDocker />}
+            title="DevOps & Tools"
+            tags={[
+              "Docker",
+              "Redis",
+              "docker-compose",
+              "Linux",
+              "systemd",
+              "Bash",
+              "gRPC",
+            ]}
+          />
         </div>
       </div>
     </section>

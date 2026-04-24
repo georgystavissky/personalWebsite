@@ -100,9 +100,7 @@ const Hero = () => {
       <div className="hero-orb hero-orb-2"></div>
       <canvas ref={canvasRef} id="particles-canvas"></canvas>
 
-      <p className="hero-eyebrow">
-        Frontend Developer · with a full-stack mindset
-      </p>
+      <p className="hero-eyebrow">Fullstack Developer · Based in Moscow</p>
 
       <h1 className={`${playfair.className} hero-title`}>
         <span className="hero-title-line">Georgii</span>
@@ -116,7 +114,7 @@ const Hero = () => {
 
       <p className="hero-desc">
         I build <strong>fast, reliable interfaces</strong> — from architecture
-        to production. Based in Moscow.
+        to production.
       </p>
 
       <div className="hero-actions">

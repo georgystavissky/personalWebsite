@@ -62,8 +62,7 @@ const Experience = () => {
                 Fullstack Developer · Greenfield Project
               </div>
               <p className="exp-desc reveal">
-                Solo developer of a new SIEM testing platform - built from
-                scratch.
+                Solo developer of a new internal project - built from scratch.
                 <br />
                 Currently in active development.
               </p>
