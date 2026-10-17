@@ -113,8 +113,8 @@ const Hero = () => {
       </div>
 
       <p className="hero-desc">
-        I build <strong>fast, reliable interfaces</strong> — from architecture
-        to production.
+        I build <strong>backends, interfaces and infrastructure</strong> — from
+        architecture to production.
       </p>
 
       <div className="hero-actions">

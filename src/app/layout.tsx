@@ -11,7 +11,8 @@ const font = Plus_Jakarta_Sans({
 
 export const metadata: Metadata = {
   title: "Georgii Stavisskii",
-  description: "Personal website",
+  description:
+    "Georgii Stavisskii — fullstack developer (C# / .NET, TypeScript / Svelte)",
 };
 
 export default function RootLayout({

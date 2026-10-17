@@ -30,63 +30,87 @@ const Stack = () => {
         <div className="stack-grid">
           <StackCard
             icon={<IoCodeSlash />}
-            title="Languages"
+            title="Backend"
             tags={[
-              "TypeScript",
-              "JavaScript ES6+",
               "C#",
-              "Go",
-              "SQL",
-              "HTML5",
-              "CSS3",
+              ".NET 10",
+              "ASP.NET Core",
+              "FastEndpoints",
+              "Dapper",
+              "gRPC",
+              "Quartz.NET",
+              "Native AOT",
+              "FluentValidation",
             ]}
           />
           <StackCard
             icon={<FaReact />}
-            title="Frontend Frameworks"
-            tags={["Svelte", "Next.js", "React", "Vue.js"]}
+            title="Frontend"
+            tags={[
+              "TypeScript",
+              "Svelte",
+              "React",
+              "Tailwind",
+              "SCSS / PostCSS",
+              "Chart.js",
+              "Figma",
+            ]}
           />
           <StackCard
             icon={<IoServer />}
-            title="Backend & Databases"
+            title="Data"
             tags={[
-              ".NET",
-              "Node.js",
-              "Bun",
-              "Gorm",
               "PostgreSQL",
-              "MongoDB",
+              "MariaDB",
+              "ClickHouse",
               "OpenSearch",
+              "Redis",
+              "MinIO (S3)",
+              "SQL",
+              "DbUp",
             ]}
           />
           <StackCard
             icon={<GiPaintBrush />}
-            title="Styling & Animation"
-            tags={["SCSS/SASS", "Tailwind CSS", "PostCSS", "GSAP"]}
+            title="Auth & Testing"
+            tags={[
+              "Keycloak (OIDC, JWT)",
+              "xUnit",
+              "Testcontainers",
+              "NSubstitute",
+              "Moq",
+              "Contract tests",
+              "E2E tests",
+            ]}
           />
 
           <StackCard
             icon={<BiNetworkChart />}
             title="Architecture & Design"
             tags={[
+              "Clean Architecture",
               "Feature-Sliced Design",
-              "Vertical-Slice Design",
               "REST API",
-              "WebSockets",
-              "System Design",
+              "Specification-driven work",
+              "Code review",
+              "Mentoring",
             ]}
           />
           <StackCard
             icon={<SiDocker />}
-            title="DevOps & Tools"
+            title="Infrastructure & AI"
             tags={[
               "Docker",
-              "Redis",
-              "docker-compose",
+              "Docker Compose",
+              "GitLab CI",
               "Linux",
               "systemd",
-              "Bash",
-              "gRPC",
+              "Prometheus",
+              "Grafana",
+              "OpenTelemetry",
+              "Claude Code",
+              "Codex",
+              "Local LLMs",
             ]}
           />
         </div>

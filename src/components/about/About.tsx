@@ -20,19 +20,23 @@ const About = () => {
       <div className="about-layout">
         <div className="about-body reveal">
           <p>
-            Software developer with
-            <strong> 2+ years of commercial experience</strong>. <br />I build
-            fast interfaces with predictable behavior and clean structure.
+            Full-stack developer (<strong>C# / .NET</strong>,{" "}
+            <strong>TypeScript / Svelte</strong>) with{" "}
+            <strong>3 years of commercial experience</strong>. <br />I build
+            backends, interfaces and the supporting infrastructure — from APIs
+            and databases to Docker environments and monitoring.
           </p>
           <p>
             I started with <strong>.NET/WPF</strong> desktop apps — that&apos;s
             where I learned to think in terms of architecture, not just UI.
-            <br /> I don&apos;t just assemble components — I design systems.
+            <br /> I work specification-first and cover my code with unit,
+            integration and contract tests.
           </p>
           <p>
             I handle features end-to-end — from requirements and architecture to
-            production. Currently building backend for a new product at UMBRELLA
-            and picking up <strong>Go</strong> along the way.
+            production. Currently building backend services at Umbrella and
+            expanding into <strong>AI engineering</strong>, studying RAG
+            systems.
           </p>
         </div>
 
@@ -42,7 +46,7 @@ const About = () => {
             <div className="card-value">
               Fullstack Developer
               <br />
-              UMBRELLA, Moscow
+              Umbrella LLC · Remote
             </div>
           </div>
           <div className="about-card">
@@ -56,7 +60,7 @@ const About = () => {
           <div className="about-card">
             <div className="card-label">Languages</div>
             <div className="card-value">
-              Russian (native) · English B2 · Korean (beginner)
+              Russian (native) · English B2 (IELTS Academic) · Korean (beginner)
             </div>
           </div>
           {/* <div className="about-card">

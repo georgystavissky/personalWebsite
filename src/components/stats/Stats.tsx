@@ -22,7 +22,7 @@ const Stats = () => {
     {
       el: sn1,
       from: 0,
-      to: 2,
+      to: 3,
       suffix: "+",
       decimals: 0,
     },
@@ -36,14 +36,14 @@ const Stats = () => {
     {
       el: sn3,
       from: 0,
-      to: 10,
+      to: 200,
       suffix: "+",
       decimals: 0,
     },
     {
       el: sn4,
       from: 0,
-      to: 1,
+      to: 2,
       suffix: "",
       decimals: 0,
     },
@@ -78,7 +78,7 @@ const Stats = () => {
     <div id="stats" className={`${playfair.className}`}>
       <div className="stat-item reveal">
         <span className="stat-number" ref={sn1}>
-          2+
+          3+
         </span>
         <span className="stat-label">Years of commercial experience</span>
       </div>
@@ -90,15 +90,17 @@ const Stats = () => {
       </div>
       <div className="stat-item reveal">
         <span className="stat-number" ref={sn3}>
-          10+
+          200+
         </span>
-        <span className="stat-label">Technologies in active use</span>
+        <span className="stat-label">Automated tests written</span>
       </div>
       <div className="stat-item reveal">
         <span className="stat-number" ref={sn4}>
-          1
+          2
         </span>
-        <span className="stat-label">Product built from scratch</span>
+        <span className="stat-label">
+          Products built solo, start to handover
+        </span>
       </div>
     </div>
   );

@@ -54,59 +54,103 @@ const Experience = () => {
           <div className="exp-item">
             <div className="exp-left reveal">
               <div className="exp-period">Feb 2026 — Present</div>
-              <div className={`${playfair.className} exp-co`}>UMBRELLA</div>
-              <div className="exp-loc">Moscow, Russia</div>
+              <div className={`${playfair.className} exp-co`}>Umbrella LLC</div>
+              <div className="exp-loc">Remote</div>
             </div>
             <div className="exp-right">
-              <div className="exp-title reveal">
-                Fullstack Developer · Greenfield Project
-              </div>
+              <div className="exp-title reveal">Fullstack Developer</div>
               <p className="exp-desc reveal">
-                Solo developer of a new internal project - built from scratch.
-                <br />
-                Currently in active development.
+                Sole developer of two backend platforms, from scratch to
+                handover, plus a contributor to a large team SIEM project.
               </p>
+              <div className="exp-list-items">
+                <div className="exp-point">
+                  <div className="exp-point-dot"></div>
+                  <span>
+                    Partner, Customer and Downloads Portals: three .NET 10
+                    services on a shared PostgreSQL database — 70+ endpoints, 15
+                    tables, Keycloak auth with 5 roles, MinIO presigned URLs,
+                    Prometheus and Grafana.
+                  </span>
+                </div>
+                <div className="exp-point">
+                  <div className="exp-point-dot"></div>
+                  <span>
+                    Wrote 200+ automated tests (NSubstitute, Testcontainers);
+                    after a month of QA testing no new bugs were reported.
+                    Agreed the specification with a systems analyst.
+                  </span>
+                </div>
+                <div className="exp-point">
+                  <div className="exp-point-dot"></div>
+                  <span>
+                    SIEM Testing Platform: REST API on .NET 10 (Native AOT) over
+                    OpenSearch, with a scheduler sending logs to external SIEMs
+                    via syslog (TCP/TLS), 82 contract tests and a GitLab CI/CD
+                    pipeline.
+                  </span>
+                </div>
+                <div className="exp-point">
+                  <div className="exp-point-dot"></div>
+                  <span>
+                    SIEM API (~1,400 C# files, Clean Architecture): migrating a
+                    legacy gRPC core to direct database access, wrote a JSON
+                    rules API specification, brought up the multi-service stack
+                    in Docker and found the root cause of failed ClickHouse
+                    writes.
+                  </span>
+                </div>
+                <div className="exp-point">
+                  <div className="exp-point-dot"></div>
+                  <span>
+                    Handed over web client expertise during the team split
+                    (Feb–May 2026).
+                  </span>
+                </div>
+              </div>
               <div className="exp-chips">
-                <span className="chip">ASP .NET</span>
+                <span className="chip">.NET 10</span>
                 <span className="chip">C#</span>
+                <span className="chip">PostgreSQL</span>
                 <span className="chip">OpenSearch</span>
+                <span className="chip">ClickHouse</span>
+                <span className="chip">Redis</span>
                 <span className="chip">Keycloak</span>
-                <span className="chip">REST API</span>
                 <span className="chip">Docker</span>
-                <span className="chip">System Design</span>
-                <span className="chip">Greenfield</span>
+                <span className="chip">Testcontainers</span>
+                <span className="chip">GitLab CI</span>
               </div>
             </div>
           </div>
 
           <div className="exp-item">
             <div className="exp-left reveal">
-              <div className="exp-period">Jun 2024 - Feb 2026</div>
+              <div className="exp-period">Jun 2024 — Feb 2026</div>
               <div className={`${playfair.className} exp-co`}>SAVRUS</div>
-              <div className="exp-loc">Moscow, Russia</div>
+              <div className="exp-loc">Remote</div>
             </div>
             <div className="exp-right">
               <div className="exp-title reveal">
-                Frontend Developer · Team Lead
+                Fullstack Developer · Team Lead
               </div>
               <p className="exp-desc reveal">
-                Led core frontend development after a full team transition.
-                Complete ownership - UI/UX, architecture, deployment, mentoring,
-                and building a new product from scratch.
+                Led core frontend development of a web platform after the team
+                transition. Owned UI/UX, complex components, architecture and
+                deployment.
               </p>
               <div className="exp-list-items">
                 <div className="exp-point">
                   <div className="exp-point-dot"></div>
                   <span>
-                    Delivered full UI redesign from Figma to production;
-                    migrated from Tailwind to SCSS + PostCSS for long-term
-                    maintainability.
+                    Delivered a UI redesign from Figma to production; rebuilt
+                    the interface on Tailwind, later migrated to SCSS + PostCSS
+                    for maintainability.
                   </span>
                 </div>
                 <div className="exp-point">
                   <div className="exp-point-dot"></div>
                   <span>
-                    Implemented 6 major resources end-to-end - from requirements
+                    Implemented 6 major resources end-to-end — from requirements
                     to production.
                   </span>
                 </div>
@@ -114,21 +158,30 @@ const Experience = () => {
                   <div className="exp-point-dot"></div>
                   <span>
                     Built data visualization tools with Chart.js and an SQL
-                    visualization module with automatic chart detection.
+                    visualization module with automatic field and chart
+                    detection.
                   </span>
                 </div>
                 <div className="exp-point">
                   <div className="exp-point-dot"></div>
                   <span>
-                    Adopted Feature-Sliced Design; created full Docker
-                    deployment tooling and authored deployment manuals.
+                    Adopted Feature-Sliced Design and designed a solution for
+                    opening multiple resources on a single page.
                   </span>
                 </div>
                 <div className="exp-point">
                   <div className="exp-point-dot"></div>
                   <span>
-                    Leading code reviews, mentoring, and currently building a
-                    new web product from zero.
+                    Created deployment tooling (Dockerfile, docker-compose,
+                    healthchecks, systemd for Ubuntu/CentOS) and deployment
+                    manuals.
+                  </span>
+                </div>
+                <div className="exp-point">
+                  <div className="exp-point-dot"></div>
+                  <span>
+                    Code reviews, mentoring and setting development pace; led
+                    development of a new web product from scratch.
                   </span>
                 </div>
               </div>
@@ -148,35 +201,33 @@ const Experience = () => {
             <div className="exp-left reveal">
               <div className="exp-period">Oct 2023 — Jun 2024</div>
               <div className={`${playfair.className} exp-co`}>SAVRUS</div>
-              <div className="exp-loc">Moscow, Russia</div>
+              <div className="exp-loc">Remote</div>
             </div>
             <div className="exp-right">
               <div className="exp-title reveal">.NET WPF Developer</div>
               <p className="exp-desc reveal">
-                Worked on a hybrid desktop + backend system. Improved
-                reliability, introduced versioning, and independently proposed
-                features that shipped to production.
+                Developed and maintained the WPF client of a SIEM system: new
+                features, bug fixes and localization.
               </p>
               <div className="exp-list-items">
                 <div className="exp-point">
                   <div className="exp-point-dot"></div>
                   <span>
-                    Implemented full unit-test coverage for all gRPC methods —
-                    significantly reduced regression risks.
+                    Covered all gRPC methods with xUnit unit and e2e tests and
+                    wrote guides.
                   </span>
                 </div>
                 <div className="exp-point">
                   <div className="exp-point-dot"></div>
                   <span>
-                    Proposed and delivered field set functionality: create,
-                    save, load, embed into business rules.
+                    Proposed and built field sets for business rules — approved
+                    and released to production.
                   </span>
                 </div>
                 <div className="exp-point">
                   <div className="exp-point-dot"></div>
                   <span>
-                    Designed a new DB table and implemented complete resource
-                    version history with historical state viewing.
+                    Designed the table and implemented resource version history.
                   </span>
                 </div>
               </div>
@@ -185,7 +236,7 @@ const Experience = () => {
                 <span className="chip">WPF</span>
                 <span className="chip">C#</span>
                 <span className="chip">gRPC</span>
-                <span className="chip">Unit Testing</span>
+                <span className="chip">xUnit</span>
                 <span className="chip">SQL</span>
               </div>
             </div>
