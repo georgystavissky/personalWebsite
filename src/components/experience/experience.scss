@@ -2,11 +2,6 @@
   background: var(--white);
 }
 
-.exp-inner {
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
 .exp-timeline {
   display: flex;
   flex-direction: column;
@@ -15,8 +10,8 @@
 .exp-item {
   display: grid;
   grid-template-columns: 220px 1fr;
-  gap: 60px;
-  padding: 60px 0;
+  gap: var(--space-6);
+  padding: var(--space-6) 0;
   border-bottom: 1px solid var(--light);
   position: relative;
 }
@@ -115,8 +110,8 @@
 @media (max-width: 768px) {
   .exp-item {
     grid-template-columns: 1fr;
-    gap: 20px;
-    padding: 40px 0;
+    gap: var(--space-2);
+    padding: var(--space-5) 0;
   }
 
   .exp-left {

@@ -16,10 +16,24 @@
   --text: #1d1d1f;
   --blue: #0071e3;
   --blue-hover: #0077ed;
+
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 32px;
+  --space-5: 48px;
+  --space-6: 64px;
+
+  --nav-height: 52px;
+  --container: 1120px; /* ширина контента, общая для всех секций */
+  --gutter: clamp(20px, 4vw, 44px); /* боковое поле */
+  --section-y: clamp(72px, 10vw, 120px); /* вертикальный padding секции */
+  --head-gap: clamp(40px, 5vw, 56px); /* отступ между заголовком и контентом */
 }
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: var(--nav-height);
 }
 
 body {
@@ -52,31 +66,33 @@ body {
 }
 
 section {
-  padding: 120px 44px;
+  padding: var(--section-y) var(--gutter);
 }
 
-@media (max-width: 768px) {
-  section {
-    padding: 80px 20px;
-  }
+.container {
+  max-width: var(--container);
+  margin: 0 auto;
+}
+
+.section-head {
+  margin-bottom: var(--head-gap);
 }
 
 .section-eyebrow {
   font-size: 13px;
   font-weight: 500;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.06em;
   color: var(--blue);
   text-transform: uppercase;
-  margin-bottom: 16px;
+  margin-bottom: var(--space-2);
 }
 
 .section-heading {
-  font-size: clamp(32px, 4vw, 64px);
+  font-size: clamp(32px, 4vw, 56px);
   font-weight: 700;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.035em;
   line-height: 1.08;
   color: var(--text);
-  margin-bottom: 24px;
 }
 
 .section-sub {
@@ -85,7 +101,7 @@ section {
   font-weight: 300;
   max-width: 560px;
   line-height: 1.6;
-  margin-bottom: 48px;
+  margin-top: var(--space-2);
   letter-spacing: -0.01em;
 }
 

@@ -1,15 +1,12 @@
 #about {
   background: var(--white);
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 120px 44px;
 }
 
 .about-layout {
   display: grid;
   grid-template-columns: 1.1fr 1fr;
-  gap: 100px;
-  align-items: start;
+  gap: clamp(40px, 7vw, 96px);
+  align-items: center;
 }
 
 .about-body p {
@@ -17,7 +14,7 @@
   color: var(--text-secondary);
   font-weight: 300;
   line-height: 1.75;
-  margin-bottom: 22px;
+  margin-bottom: var(--space-3);
   letter-spacing: -0.01em;
 }
 
@@ -33,13 +30,13 @@
 .about-cards {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: var(--space-2);
 }
 
 .about-card {
   background: var(--off-white);
   border-radius: 18px;
-  padding: 24px 28px;
+  padding: var(--space-3) 28px;
   transition:
     transform 0.25s ease,
     box-shadow 0.25s ease;
@@ -65,20 +62,16 @@
   font-weight: 400;
   letter-spacing: -0.01em;
   line-height: 1.5;
-}
 
-.card-value.green {
-  color: #1d8348;
-  font-weight: 500;
+  // вторая строка карточки — пояснение, приглушаем
+  div + div {
+    color: var(--text-secondary);
+  }
 }
 
 @media (max-width: 900px) {
-  #about {
-    padding: 80px 20px;
-  }
-
   .about-layout {
     grid-template-columns: 1fr;
-    gap: 48px;
+    gap: var(--space-5);
   }
 }

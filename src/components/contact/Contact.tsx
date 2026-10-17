@@ -1,41 +1,29 @@
 "use client";
 import { BsTelegram } from "react-icons/bs";
 import "./contact.scss";
-import { Playfair_Display } from "next/font/google";
 import { IoMdMail } from "react-icons/io";
 import Image from "next/image";
 import SetkaLogo from "@/lib/img/setka.png";
-
-const playfair = Playfair_Display({
-  variable: "--playfair-font",
-  subsets: ["latin"],
-});
-const playfair_Italic = Playfair_Display({
-  variable: "--playfair-font-italic",
-  subsets: ["latin"],
-  style: "italic",
-});
+import { profile } from "@/data/profile";
 
 const Contact = () => {
+  const { contact } = profile;
+
   const handleEmail = () => {
-    const user = "georgystavissky";
-    const domain = "gmail.com";
-    window.location.href = `mailto:${user}@${domain}`;
+    window.location.href = `mailto:${contact.emailUser}@${contact.emailDomain}`;
   };
 
   return (
     <section id="contact">
-      <h2 className={`${playfair.className} contact-title reveal`}>
-        Let&apos;s build something
+      <h2 className="contact-title reveal">
+        {contact.title}
         <br />
-        <em className={`${playfair_Italic.className}`}>extraordinary.</em>
+        <em>{contact.accent}</em>
       </h2>
-      <p className="contact-body reveal">
-        Open to full-time roles, freelance projects, and good conversations.
-      </p>
+      <p className="contact-body reveal">{contact.body}</p>
       <div className="contact-actions reveal">
         <a
-          href="https://t.me/gestoff"
+          href={contact.telegram}
           className="btn-white"
           target="_blank"
           style={{ gap: "0.5rem" }}
@@ -47,7 +35,7 @@ const Contact = () => {
         </a>
 
         <a
-          href="https://set.ki/QM32oYK"
+          href={contact.setka}
           target="_blank"
           className="btn-ghost-white"
           style={{ gap: "0.7rem" }}

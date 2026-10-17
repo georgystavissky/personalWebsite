@@ -5,20 +5,26 @@ interface StackCardProps {
   icon: ReactNode;
   title: string;
   tags: string[];
+  learning?: string[];
 }
 
-const StackCard = ({ icon, title, tags }: StackCardProps) => {
-  const tagList = tags.map((tag) => (
-    <span className="tag" key={tag}>
-      {tag}
-    </span>
-  ));
-
+const StackCard = ({ icon, title, tags, learning = [] }: StackCardProps) => {
   return (
     <div className="stack-card reveal">
       <span className="stack-card-icon">{icon}</span>
       <div className="stack-card-name">{title}</div>
-      <div className="tag-list">{tagList}</div>
+      <div className="tag-list">
+        {tags.map((tag) => (
+          <span className="tag" key={tag}>
+            {tag}
+          </span>
+        ))}
+        {learning.map((tag) => (
+          <span className="tag learning" key={tag}>
+            {tag}
+          </span>
+        ))}
+      </div>
     </div>
   );
 };

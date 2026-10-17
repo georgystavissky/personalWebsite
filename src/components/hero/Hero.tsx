@@ -3,18 +3,8 @@ import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { Particle } from "../../lib/types/Particle";
+import { profile } from "@/data/profile";
 import "./hero.scss";
-import { Playfair_Display } from "next/font/google";
-
-const playfair = Playfair_Display({
-  variable: "--playfair-font",
-  subsets: ["latin"],
-});
-const playfair_Italic = Playfair_Display({
-  variable: "--playfair-font-italic",
-  subsets: ["latin"],
-  style: "italic",
-});
 
 const Hero = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -72,26 +62,20 @@ const Hero = () => {
       ease: "expo.out",
     })
       .to(
-        ".hero-subtitle-text",
-        { y: "0%", duration: 0.9, ease: "expo.out", opacity: 1 },
-        "-=.7",
-      )
-      .to(
         ".hero-eyebrow",
         { opacity: 1, y: 0, duration: 0.6, ease: "power2.out" },
-        "-=.5",
+        "-=.7",
       )
       .to(
         ".hero-desc",
         { opacity: 1, y: 0, duration: 0.6, ease: "power2.out" },
-        "-=.3",
+        "-=.4",
       )
       .to(
         ".hero-actions",
         { opacity: 1, y: 0, duration: 0.6, ease: "power2.out" },
-        "-=.2",
-      )
-      .to(".hero-status", { opacity: 1, duration: 0.5 }, "-=.1");
+        "-=.3",
+      );
   }, []);
 
   return (
@@ -100,22 +84,14 @@ const Hero = () => {
       <div className="hero-orb hero-orb-2"></div>
       <canvas ref={canvasRef} id="particles-canvas"></canvas>
 
-      <p className="hero-eyebrow">Fullstack Developer · Based in Moscow</p>
+      <p className="hero-eyebrow">{profile.role}</p>
 
-      <h1 className={`${playfair.className} hero-title`}>
-        <span className="hero-title-line">Georgii</span>
-        <span className="hero-title-line">Stavisskii</span>
+      <h1 className="hero-title">
+        <span className="hero-title-line">{profile.name.first}</span>
+        <span className="hero-title-line">{profile.name.last}</span>
       </h1>
-      <div className="hero-subtitle-wrap">
-        <span className={`${playfair_Italic.className} hero-subtitle-text`}>
-          builds things that matter.
-        </span>
-      </div>
 
-      <p className="hero-desc">
-        I build <strong>backends, interfaces and infrastructure</strong> — from
-        architecture to production.
-      </p>
+      <p className="hero-desc">{profile.tagline}</p>
 
       <div className="hero-actions">
         <a href="#experience" className="btn-blue">
@@ -125,11 +101,6 @@ const Hero = () => {
           Get in touch
         </a>
       </div>
-
-      {/* <div className="hero-status">
-        <div className="status-dot"></div>
-        <span>Available for new opportunities</span>
-      </div> */}
     </section>
   );
 };
